@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Player;
 using UnityEngine.UI;
 
 public class projectileActor : MonoBehaviour {
@@ -181,7 +182,7 @@ public class projectileActor : MonoBehaviour {
         }
         if (MajorRotate)
         {
-            Major_RandomizeRotation();
+            MajorRandomizeRotation();
         }
     }
 
@@ -220,7 +221,7 @@ public class projectileActor : MonoBehaviour {
         }
     }
 
-    void Major_RandomizeRotation()
+    void MajorRandomizeRotation()
     {
         if (seq == 0)
         {

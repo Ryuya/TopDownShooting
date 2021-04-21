@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Player;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,9 +31,7 @@ public class ItemTrigger : MonoBehaviour {
 	private void OnTriggerEnter(Collider other)
 	{
         if(other.tag == "Player"){
-            if (inventorySlots.childCount 
-                - inventory.spaceSlots.Count <
-                inventoryMaxAmount)
+            if (inventorySlots.childCount - inventory.spaceSlots.Count < inventoryMaxAmount)
             {
                 AddInventroy();
                 Destroy(gameObject);
